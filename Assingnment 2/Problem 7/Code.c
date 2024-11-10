@@ -66,8 +66,6 @@ int main()
                         score++;
                         printf("%s is present\n", guess);
                         printf("Score: %d", score);
-                        printf("\nVerti");
-                        printf("\n%d %d",i,j);
                         break;
                         found = 0;
                     }
