@@ -98,28 +98,28 @@ void addsenior(senior * seniors,int numofsenior){
 }
 
 void displayfield(field  fe){
-	printf("Enter the GPS coordinates %d", fe.GPS_coordinates);
-	printf("Enter the soil health metrics %d", fe.soil_health_metrics);
-	printf("Enter the moisture levels %d",fe.moisture_levels);
+	printf("\n\n\nGPS coordinates %d\n", fe.GPS_coordinates);
+	printf("soil health metrics %d\n", fe.soil_health_metrics);
+	printf("moisture levels %d\n",fe.moisture_levels);
 	for (int i = 0; i < fe.numofcrops; i++) {
-	printf("Enter the type of crop %s", fe.crops[i].crop_type);
-	printf("Enter the growth stage %s", fe.crops[i].growth_stage);
-	printf("Enter the type expected yield %d", fe.crops[i].expected_yeild);
-    printf("Enter the temperature %d", fe.crops[i].forecast->temperature);
-	printf("Enter the Rainfall %d", fe.crops[i].forecast->rainfall);
-	printf("Enter the Wind Pattern %d", fe.crops[i].forecast->wind_patterns);
+	printf("Type of crop %s\n", fe.crops[i].crop_type);
+	printf("Growth stage %s\n", fe.crops[i].growth_stage);
+	printf("Type expected yield %d\n", fe.crops[i].expected_yeild);
+    printf("Temperature %d\n", fe.crops[i].forecast->temperature);
+	printf("Rainfall %d\n", fe.crops[i].forecast->rainfall);
+	printf("Wind Pattern %d\n", fe.crops[i].forecast->wind_patterns);
 	}
 	
 	for(int i=0;i< fe.numofequipments;i++){
-	printf("Enter the operational status %s", fe.equipments[i].operational_status);
-	printf("Enter the fuel level %d", fe.equipments[i].fuel_levels);
-	printf("Enter the activity schedules %s", fe.equipments[i].activity_schedules );
+	printf("Operational status %s\n", fe.equipments[i].operational_status);
+	printf("Fuel level %d\n", fe.equipments[i].fuel_levels);
+	printf("Activity schedules %s\n", fe.equipments[i].activity_schedules );
 	}
 	
 	for(int i=0;i< fe.numofsenior;i++){
-	printf("Enter the Nutrients %d", fe.seniors[i].nutrients);
-	printf("Enter the PH Level %d", fe.seniors[i].pH_levels);
-	printf("Enter the Pest activity %d", fe.seniors[i].pest_activity);
+	printf(" Nutrients %d\n", fe.seniors[i].nutrients);
+	printf(" PH Level %d\n", fe.seniors[i].pH_levels);
+	printf("Pest activity %d\n", fe.seniors[i].pest_activity);
 	}
 	
 	return ;
