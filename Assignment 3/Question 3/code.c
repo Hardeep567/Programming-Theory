@@ -26,7 +26,6 @@ int main() {
     char str[100];
     fgets(str,100,stdin);
     int c=strlen(str);
-    printf("%d\n",c);
     char *ptr=(char *)malloc(sizeof(char)* (c-1));
     
     for(int i=0;i<c-1;i++){
