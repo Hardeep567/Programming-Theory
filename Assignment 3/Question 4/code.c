@@ -5,7 +5,7 @@ void input(int**arr,int numofemployee,int numofperiod){
    
     for(int i=0;i<numofemployee;i++){
         for(int j=0;j<numofperiod;j++){
-            printf("\nEnter the Rating of employee %d in Period %d between 1 and 2\n",i,j);
+            printf("\nEnter the Rating of employee %d in Period %d between 1 and 10\n",i+1,j+1);
             scanf("%d", &arr[i][j]);
         }
     }
