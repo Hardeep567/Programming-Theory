@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 
 typedef struct employees
@@ -27,14 +28,14 @@ int main(){
     scanf("%d %d %d",&currentdate[0],&currentdate[1],&currentdate[2]);
     for(i = 0; i < 4; i++)
     {
-    	if(currentdate[2]-arr[i].dateofjoining[2]>3){
-    		if(currentdate[1]-arr[i].dateofjoining[1]>=0){
-    			if(currentdate[0]-arr[i].dateofjoining[0]>=0){
+     int years = currentdate[2] - arr[i].dateofjoining[2];
+        int months = currentdate[1] - arr[i].dateofjoining[1];
+        int days = currentdate[0] - arr[i].dateofjoining[0];
+
+        if (years > 3 || (years == 3 && months > 0) || (years == 3 && months == 0 && days >= 0)){
     				printf("%s \n %d \n %d-%d-%d\n",arr[i].employeeName,arr[i].employeecode,arr[i].dateofjoining[0],arr[i].dateofjoining[1],arr[i].dateofjoining[2]);
     				count++;
 				}
-			}
-		}
 	}
 	printf("Number of employees tenure of more than three years : %d", count);
     
